@@ -42,7 +42,7 @@ class Items extends Controller {
     }
 
     /**
-     * @OA\Get(path="/restful/items/deleteItem", tags={"Items"},
+     * @OA\Delete(path="/restful/items/deleteItem", tags={"Items"},
      * @OA\Response (response="200", description="Success"),
      * @OA\Parameter(
      *   name="id",
@@ -63,7 +63,7 @@ class Items extends Controller {
     }
 
     /**
-    * @OA\Get(path="/restful/items/insertItem", tags={"Items"},
+    * @OA\Post(path="/restful/items/insertItem", tags={"Items"},
     * @OA\Response (response="200", description="Success"),
     * @OA\Parameter(
     *   in="query",
@@ -102,7 +102,7 @@ class Items extends Controller {
     }
 
     /**
-    * @OA\Get(path="/restful/items/updateItem", tags={"Items"},
+    * @OA\Put(path="/restful/items/updateItem", tags={"Items"},
     * @OA\Response (response="200", description="Success"),
     * @OA\Parameter(
     *   in="query",

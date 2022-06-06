@@ -39,7 +39,7 @@
         
         $this->params = $this->getUrlParams() ?: [];
         try {
-            $headers = call_user_func_array([$this->currentController, $this->currentMethod], []);
+            $headers = call_user_func_array([$this->currentController, $this->currentMethod], $this->params);
         }
         catch(ArgumentCountError $e) {
             $this->closeConnection();
